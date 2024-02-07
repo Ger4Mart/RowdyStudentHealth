@@ -1,0 +1,9 @@
+FDA-approved COVID-19 vaccines:
+    Comirnaty (COVID-19 Vaccine, mRNA)
+    Spikevax (COVID-19 Vaccine, mRNA)
+
+COVID-19 vaccines authorized for emergency use in the U.S.:
+    Janssen (J&J) COVID-19 Vaccine
+    Moderna COVID-19 Vaccine and Moderna COVID-19 Vaccine, Bivalent
+    Novavax COVID-19 Vaccine, Adjuvanted
+    Pfizer-BioNTech COVID-19 Vaccine and Pfizer-BioNTech COVID-19 Vaccine, Bivalent

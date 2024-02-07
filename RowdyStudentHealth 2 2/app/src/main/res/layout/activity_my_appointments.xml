@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyAppointmentsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="-164dp">
+
+        <Button
+            android:id="@+id/back_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B4"
+            android:text="Back to appointments" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/header_textView5"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="#C13306"
+                android:gravity="center"
+                android:text="Cancel an Appointment"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/header_textView6"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#3F51B5"
+                android:gravity="center"
+                android:text="Date"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/header_textView7"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#3F51B5"
+                android:gravity="center"
+                android:text="Time"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/header_textView8"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:background="#3F51B5"
+                android:gravity="center"
+                android:text="Vaccine"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/cancel_Button1"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Cancel my appointment button"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:id="@+id/myDate_textView1"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myTime_textView1"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myVaccine_textView1"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/cancel_Button2"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Cancel my appointment button"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:id="@+id/myDate_textView2"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myTime_textView2"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myVaccine_textView2"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/cancel_Button3"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Cancel my appointment button"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:id="@+id/myDate_textView3"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myTime_textView3"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myVaccine_textView3"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/cancel_Button4"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Cancel my appointment button"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:id="@+id/myDate_textView4"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myTime_textView4"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myVaccine_textView4"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/cancel_Button5"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Cancel my appointment button"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:id="@+id/myDate_textView5"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myTime_textView5"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myVaccine_textView5"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/cancel_Button6"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Cancel my appointment button"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:id="@+id/myDate_textView6"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myTime_textView6"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myVaccine_textView6"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/cancel_Button7"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Cancel my appointment button"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:id="@+id/myDate_textView7"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myTime_textView7"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myVaccine_textView7"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/cancel_Button8"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Cancel my appointment button"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:id="@+id/myDate_textView8"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myTime_textView8"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myVaccine_textView8"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/cancel_Button9"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Cancel my appointment button"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:id="@+id/myDate_textView9"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myTime_textView9"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myVaccine_textView9"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/cancel_Button10"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Cancel my appointment button"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:id="@+id/myDate_textView10"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myTime_textView10"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/myVaccine_textView10"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

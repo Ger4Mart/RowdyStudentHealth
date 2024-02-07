@@ -1,0 +1,33 @@
+Index: app/src/main/java/edu/utsa/cs3443/rowdystudenthealth/controller/MainController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/edu/utsa/cs3443/rowdystudenthealth/controller/MainController.java b/app/src/main/java/edu/utsa/cs3443/rowdystudenthealth/controller/MainController.java
+--- a/app/src/main/java/edu/utsa/cs3443/rowdystudenthealth/controller/MainController.java	
++++ b/app/src/main/java/edu/utsa/cs3443/rowdystudenthealth/controller/MainController.java	(date 1682319709129)
+@@ -1,3 +1,4 @@
++/*
+ package edu.utsa.cs3443.rowdystudenthealth.controller;
+ 
+ import android.content.Intent;
+@@ -9,13 +10,15 @@
+ 
+     // constructor
+ 
+-    /**
++    */
++/**
+      * Method: getUsername
+      * Description: Gets the username of the user signed in from the Intent object.
+      * @param intent - an Intent object that holds the username.
+      * @return - a String with the username of the signed in user.
+-     */
++     *//*
++
+     public static String getUsername( Intent intent ) {
+         return intent.getStringExtra(key);
+     }
+-}
+\ No newline at end of file
++}*/

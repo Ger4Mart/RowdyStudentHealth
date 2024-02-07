@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppointmentsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="-164dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/menu_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#3F51B4"
+                android:text="Menu" />
+
+            <Space
+                android:layout_width="139dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/my_appointments_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#3F51B4"
+                android:text="My Appointments" />
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/header_textView1"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="#C13306"
+                android:gravity="center"
+                android:text="Schedule an Appointment"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/header_textView2"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#3F51B5"
+                android:gravity="center"
+                android:text="Date"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/header_textView3"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#3F51B5"
+                android:gravity="center"
+                android:text="Time"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/header_textView4"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:background="#3F51B5"
+                android:gravity="center"
+                android:text="Vaccine"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button1"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:id="@+id/date_textView1"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView1"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView1"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button2"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView2"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView2"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView2"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button3"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView3"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView3"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView3"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button4"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView4"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView4"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView4"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button5"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView5"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView5"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView5"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button6"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView6"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView6"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView6"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button7"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView7"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView7"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView7"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button8"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView8"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView8"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView8"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button9"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView9"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView9"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView9"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button10"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView10"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView10"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView10"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button11"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView11"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView11"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView11"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button12"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView12"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView12"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView12"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button13"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView13"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView13"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView13"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button14"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView14"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView14"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView14"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button15"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView15"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView15"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView15"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button16"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView16"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView16"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView16"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button17"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView17"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView17"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView17"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button18"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView18"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView18"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView18"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button19"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView19"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView19"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView19"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button20"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView20"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView20"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView20"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button21"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView21"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView21"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView21"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button22"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView22"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView22"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView22"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button23"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView23"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView23"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView23"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button24"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView24"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView24"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView24"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/appointment_Button25"
+                        android:layout_width="75dp"
+                        android:layout_height="82dp"
+                        android:layout_marginVertical="8dp"
+                        android:backgroundTint="#C23306"
+                        android:contentDescription="Schedule button"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:tooltipText="Schedule" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="6pt"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/date_textView25"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/time_textView25"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/vaccine_textView25"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="#3F51B5"
+                            android:gravity="center"
+                            android:text="Vaccine"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
